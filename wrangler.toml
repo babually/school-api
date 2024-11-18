@@ -1,0 +1,12 @@
+name = "school-management-api"
+main = "src/index.js"
+compatibility_date = "2023-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "school_db"
+database_id = "school-management-db"
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "school-management-cache"

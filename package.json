@@ -1,0 +1,21 @@
+{
+  "name": "school-management-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev src/index.js",
+    "deploy": "wrangler deploy",
+    "generate": "drizzle-kit generate:sqlite",
+    "migrate": "wrangler d1 execute school_db --file ./drizzle/0000_initial.sql"
+  },
+  "dependencies": {
+    "hono": "^3.11.7",
+    "@hono/zod-validator": "^0.1.11",
+    "drizzle-orm": "^0.29.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.6",
+    "wrangler": "^3.22.1"
+  }
+}
